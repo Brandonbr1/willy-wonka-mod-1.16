@@ -17,7 +17,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, WillyWonka.MOD_ID);
 
     public static final RegistryObject<Item> CHOCLATEBAR = ITEMS.register("choclatebar",
-            () -> new Item(new Item.Properties().tab(ItemGroup.TAB_FOOD).food(ModFoodItems.CHOCLATEBAR)));
+            () -> new Item(new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP).food(ModFoodItems.CHOCLATEBAR)));
 
     public static final RegistryObject<Item> GOLDENTICKET = ITEMS.register( "goldenticket", () -> new Item(new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP)));
 
