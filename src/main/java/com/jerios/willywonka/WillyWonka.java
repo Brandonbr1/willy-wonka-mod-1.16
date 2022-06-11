@@ -1,5 +1,6 @@
 package com.jerios.willywonka;
 
+import com.jerios.enities.ModEnityType;
 import com.jerios.willywonka.blocks.ModBlocks;
 import com.jerios.willywonka.items.ModItems;
 import com.jerios.willywonka.liquid.ModLiquid;
@@ -40,6 +41,7 @@ public class WillyWonka
         ModItems.register(eventBus);
         ModLiquid.register(eventBus);
         ModBlocks.register(eventBus);
+        ModEnityType.register(eventBus);
 
 
 
