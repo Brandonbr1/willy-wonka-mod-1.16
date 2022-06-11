@@ -27,7 +27,10 @@ public class ModBlocks {
             () -> new Block(AbstractBlock.Properties.of(Material.WOOL).harvestLevel(2)));
 
     public static final RegistryObject<Block> SUGARGRASS = BLOCKS.register("tall_sugar_grass",
-            () -> new TallGrassBlock(AbstractBlock.Properties.of(Material.GRASS).harvestLevel(0)));
+            () -> new TallGrassBlock(AbstractBlock.Properties.of(Material.GRASS).instabreak()));
+
+    public static final RegistryObject<Block> EDIBLE_GRASS = BLOCKS.register("edible_grass",
+            () -> new TallGrassBlock(AbstractBlock.Properties.of(Material.GRASS).instabreak()));
 
 
     private static <T extends  Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
