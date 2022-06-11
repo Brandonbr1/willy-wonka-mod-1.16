@@ -37,47 +37,46 @@ public class ModItems {
 
     // tools
 
-    public static final RegistryObject<Item> CHOCLATE_SWORD = ITEMS.register("pearl_sword",
-            () -> new SwordItem(ModItemTier.CHOCLATETEIR, 2, 3f,
-                    new Item.Properties()));
+    public static final RegistryObject<Item> CHOCLATE_SWORD = ITEMS.register("choclate_sword",
+            () -> new GoodSpeedBadSlowItem(new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP).stacksTo(1)));
 
-    public static final RegistryObject<Item> CHOCLATE_PICKAXE = ITEMS.register("pearl_pickaxe",
+    public static final RegistryObject<Item> CHOCLATE_PICKAXE = ITEMS.register("choclate_pickaxe",
             () -> new PickaxeItem(ModItemTier.CHOCLATETEIR, 0, -2f,
-                    new Item.Properties()));
+                    new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP).stacksTo(1) ));
 
-    public static final RegistryObject<Item> CHOCLATE_SHOVEL = ITEMS.register("pearl_shovel",
+    public static final RegistryObject<Item> CHOCLATE_SHOVEL = ITEMS.register("choclate_shovel",
             () -> new ShovelItem(ModItemTier.CHOCLATETEIR, 0, -2f,
-                    new Item.Properties()));
+                    new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP).stacksTo(1)   ));
 
-    public static final RegistryObject<Item> CHOCLATE_AXE = ITEMS.register("pearl_axe",
+    public static final RegistryObject<Item> CHOCLATE_AXE = ITEMS.register("choclate_axe",
             () -> new AxeItem(ModItemTier.CHOCLATETEIR, 4, -6f,
-                    new Item.Properties()));
+                    new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP).stacksTo(1)  ));
 
-    public static final RegistryObject<Item> CHOCLATE_HOE = ITEMS.register("pearl_hoe",
+    public static final RegistryObject<Item> CHOCLATE_HOE = ITEMS.register("choclate_hoe",
             () -> new HoeItem(ModItemTier.CHOCLATETEIR, 0, 0f,
-                    new Item.Properties()));
+                    new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP).stacksTo(1) ));
 
 
     // armor
 
     public static final RegistryObject<Item> PEARL_BOOTS = ITEMS.register("choclate_boots",
             () -> new ArmorItem(ModMaterialArmor.CHOCLATEARMOR, EquipmentSlotType.FEET,
-                    new Item.Properties()));
+                    new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP).stacksTo(1) ));
 
     public static final RegistryObject<Item> PEARL_CHESTPLATE = ITEMS.register("choclate_chestplate",
             () -> new ArmorItem(ModMaterialArmor.CHOCLATEARMOR, EquipmentSlotType.CHEST,
-                    new Item.Properties()));
+                    new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP).stacksTo(1) ));
 
     public static final RegistryObject<Item> PEARL_LEGGINGS = ITEMS.register("choclate_leggings",
             () -> new ArmorItem(ModMaterialArmor.CHOCLATEARMOR, EquipmentSlotType.LEGS,
-                    new Item.Properties()));
+                    new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP).stacksTo(1) ));
 
     public static final RegistryObject<Item> PEARL_HELMET = ITEMS.register("choclate_helmet",
             () -> new ArmorItem(ModMaterialArmor.CHOCLATEARMOR, EquipmentSlotType.HEAD,
-                    new Item.Properties()));
+                    new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP).stacksTo(1) ));
 
     public static final RegistryObject<Item> CHOCLATE_BOW = ITEMS.register("choclate_bow",
-            () -> new BowItem(new Item.Properties().stacksTo(1)));
+            () -> new BowItem(new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP).stacksTo(1)));
 
 
     public static void register(IEventBus eventBus) {

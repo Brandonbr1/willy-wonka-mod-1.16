@@ -1,14 +1,14 @@
 package com.jerios.willywonka.items;
 
 import net.minecraft.item.IItemTier;
+import net.minecraft.item.Item;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.LazyValue;
 import java.util.function.Supplier;
 
 public enum ModItemTier implements IItemTier {
-    CHOCLATETEIR(4, 1000, 4f, 4f, 10,
+    CHOCLATETEIR(4, 650, 5.5f, 4f, 10,
             () -> Ingredient.of(ModItems.CHOCLATEBAR.get()));
-
     ;
 
     private final int harvestLevel;
