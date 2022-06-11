@@ -27,11 +27,13 @@ public class ModItems {
 
     // food
 
-
     public static final RegistryObject<Item> SUGARGRASS = ITEMS.register( "tall_sugar_grass", () -> new Item(new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP).stacksTo(64).food(ModFoodBase.CHOCLATE_BAR) ));
 
-
     public static final RegistryObject<Item> EDIBLE_GRASS = ITEMS.register( "edible_grass", () -> new Item(new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP).stacksTo(64).food(ModFoodBase.CHOCLATE_BAR) ));
+
+    public static final RegistryObject<Item> TAFFY = ITEMS.register( "taffy", () -> new Item(new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP).stacksTo(64).food(ModFoodBase.CHOCLATE_BAR).food(ModFoodBase.FAST_FOOD)));
+
+    public static final RegistryObject<Item> JAWBREAKER = ITEMS.register( "jawbreaker", () -> new Item(new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP).stacksTo(64).food(ModFoodBase.CHOCLATE_BAR).food(ModFoodBase.FAST_FOOD)));
 
     public static final RegistryObject<Item> LOLLYPOP3DITEM = ITEMS.register( "lollypop3ditemversion", () -> new Item(new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP).stacksTo(64).food(ModFoodBase.CHOCLATE_BAR).food(ModFoodBase.FAST_FOOD)));
 
