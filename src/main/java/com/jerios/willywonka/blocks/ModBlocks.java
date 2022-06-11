@@ -19,7 +19,7 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS
             = DeferredRegister.create(ForgeRegistries.BLOCKS, WillyWonka.MOD_ID);
 
-    public static final RegistryObject<Block> LOLLYPOP3DVERSION = BLOCKS.register("Lollypop3dversion",
+    public static final RegistryObject<Block> LOLLYPOP3DVERSION = BLOCKS.register("lollypop3dversion",
             () -> new Block(AbstractBlock.Properties.of(Material.WOOL)));
 
 
