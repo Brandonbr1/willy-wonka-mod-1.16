@@ -70,9 +70,10 @@ public class WillyWonka
 
         //fluids
 
-        RenderTypeLookup.setRenderLayer(ModLiquid.CHOCLATE_FLUID.get(),RenderType.translucent());
-        RenderTypeLookup.setRenderLayer(ModLiquid.CLOCLATE_BLOCK.get(), RenderType.translucent());
-        RenderTypeLookup.setRenderLayer(ModLiquid.CHOCLATE_FLOWING.get(), RenderType.translucent());
+        RenderTypeLookup.setRenderLayer(ModLiquid.CHOCLATE_FLUID.get(),RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(ModLiquid.CLOCLATE_BLOCK.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(ModLiquid.CHOCLATE_FLOWING.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(ModBlocks.LOLLYPOP3DVERSION.get(), RenderType.cutout());
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)
