@@ -6,7 +6,7 @@ import net.minecraft.util.LazyValue;
 import java.util.function.Supplier;
 
 public enum ModItemTier implements IItemTier {
-    CHOCLATETEIR(4, 1000, 4f, 12f, 10,
+    CHOCLATETEIR(4, 1000, 4f, 4f, 10,
             () -> Ingredient.of(ModItems.CHOCLATEBAR.get()));
 
     ;
