@@ -1,8 +1,12 @@
 package com.jerios.willywonka;
 
+import com.jerios.willywonka.blocks.ModBlocks;
 import com.jerios.willywonka.items.ModItems;
+import com.jerios.willywonka.liquid.ModLiquid;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -34,6 +38,10 @@ public class WillyWonka
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
+        ModLiquid.register(eventBus);
+        ModBlocks.register(eventBus);
+
+
 
         eventBus.addListener(this::setup);
         // Register the enqueueIMC method for modloading
@@ -57,6 +65,12 @@ public class WillyWonka
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
         LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().options);
+
+        //fluids
+
+        RenderTypeLookup.setRenderLayer(ModLiquid.CHOCLATE_FLUID.get(),RenderType.translucent());
+        RenderTypeLookup.setRenderLayer(ModLiquid.CLOCLATE_BLOCK.get(), RenderType.translucent());
+        RenderTypeLookup.setRenderLayer(ModLiquid.CHOCLATE_FLOWING.get(), RenderType.translucent());
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)
