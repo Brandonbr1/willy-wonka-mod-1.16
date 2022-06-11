@@ -17,5 +17,6 @@ public class GoodSpeedBadSlowItem extends Item {
         target.addEffect(new EffectInstance(Effects.MOVEMENT_SLOWDOWN, 400, 3));
 
         return super.hurtEnemy(stack, target, attacker);
+
     }
 }
