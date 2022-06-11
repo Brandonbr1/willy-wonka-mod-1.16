@@ -1,6 +1,6 @@
 package com.jerios.willywonka;
 
-import com.jerios.enities.ModEnityType;
+import com.jerios.willywonka.enities.ModEnityType;
 import com.jerios.willywonka.blocks.ModBlocks;
 import com.jerios.willywonka.items.ModItems;
 import com.jerios.willywonka.liquid.ModLiquid;
