@@ -22,6 +22,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> LOLLYPOP3DVERSION = BLOCKS.register("lollypop3dversion",
             () -> new Block(AbstractBlock.Properties.of(Material.WOOL)));
 
+    public static final RegistryObject<Block> HARDENEDCHOCLATE = BLOCKS.register("hardenedchoclate",
+            () -> new Block(AbstractBlock.Properties.of(Material.WOOL)));
+
 
     private static <T extends  Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
