@@ -5,3 +5,5 @@ code and assets are under ARR
 
 I am currently looking for a blockbentch modeler rn
 so contact me via my gmail for that
+
+thanks to https://www.youtube.com/c/TKaupenjoe for teaching me how to code
