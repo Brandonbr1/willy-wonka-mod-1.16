@@ -4,6 +4,7 @@ import com.jerios.willywonka.WillyWonka;
 import com.jerios.willywonka.items.ModItems;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.TallGrassBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -24,6 +25,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> HARDENEDCHOCLATE = BLOCKS.register("hardenedchoclate",
             () -> new Block(AbstractBlock.Properties.of(Material.WOOL)));
+
+    public static final RegistryObject<Block> SUGARGRASS = BLOCKS.register("sugargrass",
+            () -> new TallGrassBlock(AbstractBlock.Properties.of(Material.GRASS)));
 
 
     private static <T extends  Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
