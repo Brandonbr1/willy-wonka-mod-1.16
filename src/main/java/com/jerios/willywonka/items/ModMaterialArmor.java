@@ -11,7 +11,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 public enum ModMaterialArmor implements IArmorMaterial{
 
-    CHOCLATEARMOR("choclate_armor", 7, new int[] {3, 6, 8,3}, 12, SoundEvents.ARMOR_EQUIP_DIAMOND, 3.0f, 0.0f, (null)  );
+    CHOCLATEARMOR("choclate_armor", 7, new int[] {2, 5, 6, 2}, 12, SoundEvents.ARMOR_EQUIP_DIAMOND, 3.0f, 0.0f, (null));
 
 
 
