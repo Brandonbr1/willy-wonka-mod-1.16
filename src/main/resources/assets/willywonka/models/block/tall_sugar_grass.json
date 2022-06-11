@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "willywonka:block/tall_sugar_grass"
+  }
+}

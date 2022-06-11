@@ -21,13 +21,13 @@ public class ModBlocks {
             = DeferredRegister.create(ForgeRegistries.BLOCKS, WillyWonka.MOD_ID);
 
     public static final RegistryObject<Block> LOLLYPOP3DVERSION = BLOCKS.register("lollypop3dversion",
-            () -> new Block(AbstractBlock.Properties.of(Material.WOOL)));
+            () -> new Block(AbstractBlock.Properties.of(Material.WOOL).harvestLevel(4)));
 
     public static final RegistryObject<Block> HARDENEDCHOCLATE = BLOCKS.register("hardenedchoclate",
-            () -> new Block(AbstractBlock.Properties.of(Material.WOOL)));
+            () -> new Block(AbstractBlock.Properties.of(Material.WOOL).harvestLevel(2)));
 
-    public static final RegistryObject<Block> SUGARGRASS = BLOCKS.register("sugargrass",
-            () -> new TallGrassBlock(AbstractBlock.Properties.of(Material.GRASS)));
+    public static final RegistryObject<Block> SUGARGRASS = BLOCKS.register("tall_sugar_grass",
+            () -> new TallGrassBlock(AbstractBlock.Properties.of(Material.GRASS).harvestLevel(0)));
 
 
     private static <T extends  Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
