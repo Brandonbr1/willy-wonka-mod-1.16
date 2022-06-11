@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "willywonka:block/Lollypop3dversion",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "willywonka:block/Lollypop3dversion"
+    },
+    "facing=south": {
+      "model": "willywonka:block/Lollypop3dversion",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "willywonka:block/Lollypop3dversion",
+      "y": 270
+    }
+  }
+}
