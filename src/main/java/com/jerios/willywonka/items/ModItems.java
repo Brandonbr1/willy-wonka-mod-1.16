@@ -6,6 +6,7 @@ import com.jerios.willywonka.food.JawBreakerItem;
 import com.jerios.willywonka.food.ModFoodBase;
 import com.jerios.willywonka.liquid.ModLiquid;
 import net.minecraft.block.TallGrassBlock;
+import net.minecraft.entity.projectile.ThrowableEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -84,6 +85,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> FIZZYDRINK = ITEMS.register("fizzy_drink",
             () -> new FizzyLiftingDrinkItem(new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP)));
+
+    public static final RegistryObject<Item> EXPLOSIVECANDY = ITEMS.register("fizzy_drink",
+            () -> new Item(new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP)));
 
 
     public static void register(IEventBus eventBus) {
