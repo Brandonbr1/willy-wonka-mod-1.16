@@ -1,7 +1,6 @@
 package com.jerios.willywonka.enities.render;
 
-import com.jerios.willywonka.enities.AgressiveOompaLoompaEntity;
-import com.jerios.willywonka.enities.AgressiveOompaLoompaModel;
+import com.jerios.willywonka.enities.model.AgressiveOompaLoompaModel;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.util.ResourceLocation;

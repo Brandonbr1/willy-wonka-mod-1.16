@@ -1,9 +1,6 @@
 package com.jerios.willywonka.food;
 
-import com.jerios.willywonka.WillyWonka;
 import net.minecraft.advancements.CriteriaTriggers;
-import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
@@ -14,11 +11,7 @@ import net.minecraft.item.UseAction;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraft.stats.Stats;
-import net.minecraft.util.ActionResult;
-import net.minecraft.util.DrinkHelper;
-import net.minecraft.util.Hand;
-import net.minecraft.util.SoundEvent;
-import net.minecraft.util.SoundEvents;
+import net.minecraft.util.*;
 import net.minecraft.world.World;
 
 
@@ -44,7 +37,7 @@ public class FizzyLiftingDrinkItem extends Item {
             }
 
             if (p_77654_1_.isEmpty()) {
-                return new ItemStack(Items.GLASS_BOTTLE);
+                return new ItemStack(null);
             } else {
                 if (p_77654_3_ instanceof PlayerEntity && !((PlayerEntity)p_77654_3_).abilities.instabuild) {
                     ItemStack itemstack = new ItemStack(Items.GLASS_BOTTLE);
@@ -68,11 +61,11 @@ public class FizzyLiftingDrinkItem extends Item {
         }
 
         public SoundEvent getDrinkingSound() {
-            return SoundEvents.HONEY_DRINK;
+            return SoundEvents.BOTTLE_EMPTY;
         }
 
         public SoundEvent getEatingSound() {
-            return SoundEvents.HONEY_DRINK;
+            return SoundEvents.BOTTLE_EMPTY;
         }
 
         public ActionResult<ItemStack> use(World p_77659_1_, PlayerEntity p_77659_2_, Hand p_77659_3_) {
