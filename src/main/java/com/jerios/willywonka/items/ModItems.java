@@ -86,11 +86,14 @@ public class ModItems {
     public static final RegistryObject<Item> FIZZYDRINK = ITEMS.register("fizzy_drink",
             () -> new FizzyLiftingDrinkItem(new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP)));
 
-    public static final RegistryObject<Item> EXPLOSIVECANDY = ITEMS.register("fizzy_drink",
+    public static final RegistryObject<Item> EXPLOSIVECANDY = ITEMS.register("explosive_candy",
             () -> new Item(new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP)));
 
     public static final RegistryObject<Item> EXPLOSIVE_ARROW = ITEMS.register("explosive_arrow",
             () -> new ExplosiveArrowItem(new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP)));
+
+    public static final RegistryObject<Item> GOLDEN_EGG = ITEMS.register("golden_egg",
+            () -> new Item(new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP).stacksTo(1)));
 
 
     public static void register(IEventBus eventBus) {
