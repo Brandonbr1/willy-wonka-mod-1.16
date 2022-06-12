@@ -1,6 +1,7 @@
 package com.jerios.willywonka.items;
 
 import com.jerios.willywonka.WillyWonka;
+import com.jerios.willywonka.food.FizzyLiftingDrinkItem;
 import com.jerios.willywonka.food.ModFoodBase;
 import com.jerios.willywonka.liquid.ModLiquid;
 import net.minecraft.block.TallGrassBlock;
@@ -79,6 +80,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> CHOCLATE_BOW = ITEMS.register("choclate_bow",
             () -> new BowItem(new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP).stacksTo(1)));
+
+    public static final RegistryObject<Item> FIZZYDRINK = ITEMS.register("fizzy_drink",
+            () -> new FizzyLiftingDrinkItem(new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP)));
 
 
     public static void register(IEventBus eventBus) {

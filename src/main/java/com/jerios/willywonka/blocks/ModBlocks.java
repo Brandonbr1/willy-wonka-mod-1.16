@@ -32,6 +32,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> EDIBLE_GRASS = BLOCKS.register("edible_grass",
             () -> new TallGrassBlock(AbstractBlock.Properties.of(Material.GRASS).instabreak()));
 
+    public static final RegistryObject<Block> TAFFY_BLOCK = BLOCKS.register("taffy_block",
+            () -> new TallGrassBlock(AbstractBlock.Properties.of(Material.GRASS).instabreak()));
+
 
     private static <T extends  Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
