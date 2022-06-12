@@ -20,11 +20,11 @@ public class ModEnityType {
                                     EntityClassification.MONSTER).sized(0.5f, 2f)
                             .build(new ResourceLocation(WillyWonka.MOD_ID, "oompa_loompa").toString()));
 
-    //public static final RegistryObject<EntityType<AgressiveOompaLoompaEntity>> agressive_OOMPA_LOOMPA =
-            //ENTITY_TYPES.register("buff_zombie",
-                    //() -> EntityType.Builder.of(AgressiveOompaLoompaEntity::new,
-                                    //EntityClassification.MONSTER).sized(0.5f, 2f)
-                            //.build(new ResourceLocation(WillyWonka.MOD_ID, "agressive_oompa_loompa").toString()));
+    public static final RegistryObject<EntityType<OompaLoompaEntity>> AgressiveOompaLoompaEntity =
+            ENTITY_TYPES.register("agressive_oompa_loompa",
+                    () -> EntityType.Builder.of(OompaLoompaEntity::new,
+                                    EntityClassification.MONSTER).sized(0.5f, 2f)
+                            .build(new ResourceLocation(WillyWonka.MOD_ID, "agressive_oompa_loompa").toString()));
 
     public static final RegistryObject<EntityType<ExplosiveArrowEntity>> EXPLOSIVE_ARROW = ENTITY_TYPES.register("torch_arrow",
             () -> EntityType.Builder.of((EntityType.IFactory<ExplosiveArrowEntity>) ExplosiveArrowEntity::new, EntityClassification.MISC)
