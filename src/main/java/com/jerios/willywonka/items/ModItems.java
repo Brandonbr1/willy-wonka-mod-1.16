@@ -89,6 +89,9 @@ public class ModItems {
     public static final RegistryObject<Item> EXPLOSIVECANDY = ITEMS.register("fizzy_drink",
             () -> new Item(new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP)));
 
+    public static final RegistryObject<Item> EXPLOSIVE_ARROW = ITEMS.register("explosive_arrow",
+            () -> new ExplosiveArrowItem(new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP)));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -26,6 +26,10 @@ public class ModEnityType {
                                     //EntityClassification.MONSTER).sized(0.5f, 2f)
                             //.build(new ResourceLocation(WillyWonka.MOD_ID, "agressive_oompa_loompa").toString()));
 
+    public static final RegistryObject<EntityType<ExplosiveArrowEntity>> EXPLOSIVE_ARROW = ENTITY_TYPES.register("torch_arrow",
+            () -> EntityType.Builder.of((EntityType.IFactory<ExplosiveArrowEntity>) ExplosiveArrowEntity::new, EntityClassification.MISC)
+                    .sized(0.5F, 0.5F).build("torch_arrow"));
+
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
     }
