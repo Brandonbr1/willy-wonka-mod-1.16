@@ -11,6 +11,7 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.SoundEvents;
+import net.minecraft.world.Explosion;
 import net.minecraft.world.World;
 
 import java.util.function.Predicate;
@@ -49,7 +50,7 @@ public class ModExplosiveCandy  extends BowItem {
 
                         int j = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.POWER_ARROWS, p_77615_1_);
                         if (j > 0) {
-                            abstractarrowentity.setBaseDamage(abstractarrowentity.getBaseDamage() + (double)j * 0.5D + 0.5D);
+                            abstractarrowentity.setBaseDamage(abstractarrowentity.getBaseDamage() + (double)j * 1D + 1D);
                         }
 
                         int k = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.PUNCH_ARROWS, p_77615_1_);
