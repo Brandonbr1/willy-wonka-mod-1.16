@@ -2,6 +2,8 @@ package com.jerios.willywonka.food;
 
 import com.jerios.willywonka.WillyWonka;
 import net.minecraft.advancements.CriteriaTriggers;
+import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
@@ -18,13 +20,12 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.common.Mod;
+
 
 
 public class FizzyLiftingDrinkItem extends Item {
 
 
-   
     
     public FizzyLiftingDrinkItem(Item.Properties p_i225737_1_) {
             super(p_i225737_1_);
@@ -57,6 +58,7 @@ public class FizzyLiftingDrinkItem extends Item {
             }
         }
 
+
         public int getUseDuration(ItemStack p_77626_1_) {
             return 40;
         }
@@ -76,5 +78,7 @@ public class FizzyLiftingDrinkItem extends Item {
         public ActionResult<ItemStack> use(World p_77659_1_, PlayerEntity p_77659_2_, Hand p_77659_3_) {
             return DrinkHelper.useDrink(p_77659_1_, p_77659_2_, p_77659_3_);
         }
+
+
     
 }

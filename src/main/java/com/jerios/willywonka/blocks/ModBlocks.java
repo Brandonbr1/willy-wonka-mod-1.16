@@ -33,7 +33,13 @@ public class ModBlocks {
             () -> new TallGrassBlock(AbstractBlock.Properties.of(Material.GRASS).instabreak()));
 
     public static final RegistryObject<Block> TAFFY_BLOCK = BLOCKS.register("taffy_block",
-            () -> new TallGrassBlock(AbstractBlock.Properties.of(Material.GRASS).instabreak()));
+            () -> new Block(AbstractBlock.Properties.of(Material.GRASS).instabreak()));
+
+    public static final RegistryObject<Block> RAINBOW_LOLLYPOP_BLOCK = BLOCKS.register("rainbow_lollypop",
+            () -> new Block(AbstractBlock.Properties.of(Material.GRASS).instabreak()));
+
+    //public static final RegistryObject<Block> JAW_BREAKER_BLOCK = BLOCKS.register("jaw_breaker_bloc",
+     //       () -> new Block(AbstractBlock.Properties.of(Material.GRASS).instabreak()));
 
 
     private static <T extends  Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
