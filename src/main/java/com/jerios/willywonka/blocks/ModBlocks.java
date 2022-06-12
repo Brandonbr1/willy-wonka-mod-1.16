@@ -38,6 +38,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> RAINBOW_LOLLYPOP_BLOCK = BLOCKS.register("rainbow_lollypop",
             () -> new Block(AbstractBlock.Properties.of(Material.GRASS).instabreak()));
 
+    public static final RegistryObject<Block> GOLDEN_EGG = BLOCKS.register("golden_egg",
+            () -> new ModGoldenEgg(AbstractBlock.Properties.of(Material.GRASS).instabreak()));
+
     //public static final RegistryObject<Block> JAW_BREAKER_BLOCK = BLOCKS.register("jaw_breaker_bloc",
      //       () -> new Block(AbstractBlock.Properties.of(Material.GRASS).instabreak()));
 
