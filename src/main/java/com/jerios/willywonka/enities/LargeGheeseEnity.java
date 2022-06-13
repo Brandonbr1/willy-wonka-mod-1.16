@@ -30,6 +30,8 @@ public class LargeGheeseEnity extends ChickenEntity {
         this.setPathfindingMalus(PathNodeType.WATER, 0.0F);
     }
 
+
+
     private static final Ingredient FOOD_ITEMS = Ingredient.of(Items.WHEAT_SEEDS, Items.MELON_SEEDS, Items.PUMPKIN_SEEDS, Items.BEETROOT_SEEDS);
     public float flap;
     public float flapSpeed;
@@ -128,5 +130,6 @@ public class LargeGheeseEnity extends ChickenEntity {
     {
         this.playSound(SoundEvents.CHICKEN_STEP, 0.20F, 0.5F);
     }
+
 
 }
