@@ -8,6 +8,8 @@ import net.minecraft.world.gen.feature.ConfiguredFeature;
 import javax.annotation.Nullable;
 import java.util.Random;
 
+@SuppressWarnings({"unused"})
+
 public class CandyTree extends Tree {
     @Nullable
     @Override

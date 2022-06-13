@@ -6,6 +6,7 @@ import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.LazyValue;
 import java.util.function.Supplier;
 
+@SuppressWarnings({"unused"})
 public enum ModItemTier implements IItemTier {
     CHOCLATETEIR(4, 650, 5.5f, 4f, 10,
             () -> Ingredient.of(ModItems.CHOCLATEBAR.get()));

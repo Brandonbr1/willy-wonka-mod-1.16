@@ -16,6 +16,8 @@ import net.minecraft.world.World;
 
 import java.util.function.Predicate;
 
+@SuppressWarnings({"unused"})
+
 public class ModExplosiveCandy  extends BowItem {
     public ModExplosiveCandy(Properties p_i48522_1_) {
         super(p_i48522_1_);
