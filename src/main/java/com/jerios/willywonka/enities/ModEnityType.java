@@ -17,7 +17,7 @@ public class ModEnityType {
     public static final RegistryObject<EntityType<OompaLoompaEntity>> OOMPA_LOOMPA =
             ENTITY_TYPES.register("oompa_loompa",
                     () -> EntityType.Builder.of(OompaLoompaEntity::new,
-                                    EntityClassification.MONSTER).sized(0.5f, 2f)
+                                    EntityClassification.CREATURE).sized(0.5f, 2f)
                             .build(new ResourceLocation(WillyWonka.MOD_ID, "oompa_loompa").toString()));
 
     public static final RegistryObject<EntityType<OompaLoompaAgressiveEntity>> OOMPA_LOOMPA_AGRESSIVE =
@@ -29,7 +29,7 @@ public class ModEnityType {
     public static final RegistryObject<EntityType<LargeGheeseEnity>> LARGEGHEESE =
             ENTITY_TYPES.register("large_gheese",
                     () -> EntityType.Builder.of(LargeGheeseEnity::new,
-                                    EntityClassification.MONSTER).sized(1f, 2f)
+                                    EntityClassification.CREATURE).sized(1f, 2f)
                             .build(new ResourceLocation(WillyWonka.MOD_ID, "large_gheese").toString()));
 
 
