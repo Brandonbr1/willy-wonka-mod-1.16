@@ -41,8 +41,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> GOLDEN_EGG = BLOCKS.register("golden_egg",
             () -> new ModGoldenEgg(AbstractBlock.Properties.of(Material.HEAVY_METAL)));
 
-    //public static final RegistryObject<Block> JAW_BREAKER_BLOCK = BLOCKS.register("jaw_breaker_bloc",
-     //       () -> new Block(AbstractBlock.Properties.of(Material.GRASS).instabreak()));
+    public static final RegistryObject<Block> JAW_BREAKER_BLOCK = BLOCKS.register("jaw_breaker_block",
+            () -> new Block(AbstractBlock.Properties.of(Material.GRASS).harvestLevel((int) 50F)));
 
 
     public static final RegistryObject<Block> LOLLYPOP_STICK = BLOCKS.register("lollypop_stick",
