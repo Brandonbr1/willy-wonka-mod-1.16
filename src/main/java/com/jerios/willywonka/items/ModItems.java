@@ -37,7 +37,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> JAWBREAKER = ITEMS.register( "jawbreaker", () -> new JawBreakerItem(new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP).stacksTo(64)));
 
-    public static final RegistryObject<Item> LOLLYPOP3DITEM = ITEMS.register( "lollypop3ditemversion", () -> new Item(new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP).stacksTo(64).food(ModFoodBase.CHOCLATE_BAR).food(ModFoodBase.FAST_FOOD)));
+    public static final RegistryObject<Item> InfiniCandy = ITEMS.register( "infinicandy", () -> new Item(new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP).stacksTo(64).food(ModFoodBase.CHOCLATE_BAR)));
+
+    public static final RegistryObject<Item> LOLLYPOP3DITEM = ITEMS.register( "lollypop3ditemversion", () -> new Item(new Item.Properties().tab(ModItemGroup.WILLYWONKA_GROUP).stacksTo(64).food(ModFoodBase.CHOCLATE_BAR)));
 
     // tools
 

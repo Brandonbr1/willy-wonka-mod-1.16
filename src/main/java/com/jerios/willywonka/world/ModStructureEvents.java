@@ -12,6 +12,6 @@ public class ModStructureEvents {
 
     @SubscribeEvent
     public static void biomeLoadingEvent(final BiomeLoadingEvent event){
-        ModTreeGen.GenerateLollypops(event);
+        TreeGen.generateTrees(event);
     }
 }
