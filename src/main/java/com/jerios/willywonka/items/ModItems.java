@@ -5,8 +5,6 @@ import com.jerios.willywonka.food.FizzyLiftingDrinkItem;
 import com.jerios.willywonka.food.JawBreakerItem;
 import com.jerios.willywonka.food.ModFoodBase;
 import com.jerios.willywonka.liquid.ModLiquid;
-import net.minecraft.block.TallGrassBlock;
-import net.minecraft.entity.projectile.ThrowableEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -14,6 +12,7 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
+@SuppressWarnings({"unused"})
 public class ModItems {
 
     public static final DeferredRegister<Item> ITEMS =

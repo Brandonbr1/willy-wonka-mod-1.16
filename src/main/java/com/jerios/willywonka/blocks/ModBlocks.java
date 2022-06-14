@@ -36,13 +36,17 @@ public class ModBlocks {
             () -> new Block(AbstractBlock.Properties.of(Material.GRASS).instabreak()));
 
     public static final RegistryObject<Block> RAINBOW_LOLLYPOP_BLOCK = BLOCKS.register("rainbow_lollypop",
-            () -> new Block(AbstractBlock.Properties.of(Material.GRASS).instabreak()));
+            () -> new Block(AbstractBlock.Properties.of(Material.WOOD).harvestLevel((int) 2F).randomTicks()));
 
     public static final RegistryObject<Block> GOLDEN_EGG = BLOCKS.register("golden_egg",
-            () -> new ModGoldenEgg(AbstractBlock.Properties.of(Material.GRASS).instabreak()));
+            () -> new ModGoldenEgg(AbstractBlock.Properties.of(Material.HEAVY_METAL)));
 
-    //public static final RegistryObject<Block> JAW_BREAKER_BLOCK = BLOCKS.register("jaw_breaker_bloc",
-     //       () -> new Block(AbstractBlock.Properties.of(Material.GRASS).instabreak()));
+    public static final RegistryObject<Block> JAW_BREAKER_BLOCK = BLOCKS.register("jaw_breaker_block",
+            () -> new Block(AbstractBlock.Properties.of(Material.GRASS).harvestLevel((int) 50F)));
+
+
+    public static final RegistryObject<Block> LOLLYPOP_STICK = BLOCKS.register("lollypop_stick",
+            () -> new Block(AbstractBlock.Properties.of(Material.WOOL).instabreak()));
 
 
     private static <T extends  Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
